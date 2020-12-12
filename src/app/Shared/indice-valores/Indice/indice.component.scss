@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@700&display=swap');
+
+$font: 'Montserrat', 'sans-serif';
+
+ion-col{
+   --ion-grid-column-padding:0;
+}
+ion-row{
+   --ion-grid-row-padding:0;
+}
+ion-card{
+   top: 20px;
+   background: rgba(255,255,255,.3);
+   border-radius: 10px;
+   
+}
+.item-transp{
+   --background: transparent;
+}
+
+.center{
+   display: flex;
+       justify-content: center;
+  
+}
+.White{
+   background: rgba(255,255,255,.9);
+   padding: 15px 0;
+   ion-col{
+       display: flex;
+       justify-content: center;
+       width: 100%;
+   }
+   ion-icon{
+      
+       font-size: 22px;
+       color: #69bb7b;
+       margin:auto !important;
+   }
+   ion-label{
+      font-family: $font;
+   font-size: 12px;
+   color: #69bb7b;
+   margin:auto !important;
+   margin-left: 0px !important;
+   
+   }
+}
+
+ion-item{ 
+   --background: transparent;
+   text-align: center;
+   height: 100%;
+   width: 100%;
+
+   img{
+   position: relative;
+   margin:auto !important;
+   }
+   
+ion-label{
+   font-size: 18px;
+   color: black;
+   font-weight: 600;
+   -webkit-text-stroke: 1px rgba(0,0,0,.1);
+   font-family: $font;
+
+   }
+}
+
+
+
+.Row-I-Bueno{
+   position: relative;
+   background: rgba(0,255,0,.9);
+   border-radius: 10px;
+}
+.Row-I-Aceptable{
+   position: relative;
+   background: rgba(255,255,0,.9);
+   border-radius: 10px;
+}
+
+.Row-I-Mala{
+   position: relative;
+   background: rgba(255,126,0,.9);
+   border-radius: 10px;
+}
+.Row-I-Muy-Mala{
+   position: relative;
+   background: rgba(255,0,0,.9);
+   border-radius: 10px;
+}
+.Row-I-Ex-Mala{
+   position: relative;
+background: rgba(143,63,151,.9);
+border-radius: 10px;
+}
+ion-col{
+   width: 100%;
+ position: relative;
+   .info{
+     ion-icon{
+      color: black;
+      font-size: 28px;
+      position: absolute;
+      z-index: 4;
+      left: 2px;
+      top: 2px;
+      cursor: pointer;
+     }
+   }
+}
+img{
+   z-index: -1;
+
+}
+

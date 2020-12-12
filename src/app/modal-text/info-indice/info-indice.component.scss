@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@700&display=swap');
+
+$font: 'Montserrat', 'sans-serif';
+
+ion-card{
+    
+    background: rgba(255,255,255,.1);
+        ion-card-subtitle{
+        position: relative;
+        margin: 15px 5px;
+        color: #69bb7b;
+        font-family: $font;
+    }
+    ion-card-content{
+        color: #69bb7b;
+        font-family: $font;
+        margin: 0px 15px;
+    }
+}
+
+
+
+
+.G{
+    background: transparent;
+    position: relative;
+    width: 90%;
+    left: 5%;
+    margin-bottom: 20px;
+    height: 120px;
+    img{
+        position: relative;
+        top: 20px;
+        width: 60px;
+        background-color: white;
+        border-radius: 5px;
+    }
+    h2{
+        position: absolute;
+        font-family: $font;
+        color: #69bb7b;
+       left: 70px;
+        font-size: 14px;
+        top: 0;
+       
+    }
+    p{
+        position: absolute;
+        top: 30px;
+        left: 70px;
+        font-family: $font;
+        color: #69bb7b;
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and(max-width:320px){
+    ion-card{
+    
+      
+        ion-card-content{
+          
+          font-size: 12px;
+            margin: 0px 15px;
+        }
+    }
+    .G{
+        margin-bottom: 30px;
+        p{
+            position: absolute;
+            top: 35px;
+            left: 70px;
+            font-family: $font;
+            color: #69bb7b;
+            font-size: 12px;
+        }
+    
+    }
+
+}
+@media only screen and(max-width:280px){
+    
+.G{
+    margin-bottom: 20px;
+    height: 150px;
+    img{
+        position: relative;
+        top: 20px;
+        width: 60px;
+        background-color: white;
+        border-radius: 5px;
+    }
+    h2{
+        position: absolute;
+        font-family: $font;
+        color: #69bb7b;
+       left: 70px;
+        font-size: 14px;
+        top: 0;
+       
+    }
+    p{
+        position: absolute;
+        top: 35px;
+        left: 70px;
+        font-family: $font;
+        color: #69bb7b;
+        font-size: 12px;
+    }
+
+}
+
+
+}

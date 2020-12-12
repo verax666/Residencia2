@@ -1,0 +1,170 @@
+<ion-card>
+  <h2 class="title">¿Qué son?</h2>
+  <ion-card-content [ngSwitch]="true">
+  <div *ngSwitchCase="P == 'P.M. 10'">
+    Las PM10 se pueden definir como aquellas partículas sólidas o líquidas de polvo, cenizas, hollín, partículas metálicas, 
+    cemento o polen, dispersas en la atmósfera, y cuyo diámetro varía entre 2,5 y 10 µm
+     <h2>Efectos de la salud</h2> 
+     <ul>
+       <li>Muerte prematura en personas con enfermedades cardíacas o pulmonares </li>
+       <li>Infartos de miocardio no mortales</li>
+       <li>Latidos irregulares</li>
+       <li> Asma agravada</li>
+       <li>Función pulmonar reducida</li>
+       <li>Síntomas respiratorios aumentados, como irritación en las vías respiratorias, tos o dificultad para respirar.</li>
+       <li>La exposición a la contaminación por partículas tiende a afectar en su mayoría a personas con enfermedades cardíacas o pulmonares, niños y adultos mayores.</li>
+     </ul>
+    <h2>Indice Aire y Salud</h2>
+     <div *ngFor="let i of pm10">
+      <div class="Niveles">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="4"> <img src="{{i[3]}}" height="60" width="60" alt=""></ion-col>
+            <ion-col size="8">  
+              <p>Calidad: {{i[0]}} </p>
+            <span>Rango: {{i[2]}}</span>
+              <p>Riesgo: {{i[1]}}</p></ion-col>
+          </ion-row>
+        </ion-grid>
+    </div>
+     </div>
+    </div>
+    <div *ngSwitchCase="P == 'P.M. 2.5'">
+      Son partículas muy pequeñas en el ambiente y pueden desplazarse fácilmente en los pulmones mientras respiramos. 
+      Contienen sustancias orgánicas, polvo, hollín, metales y químicas.
+      <h2>Efectos de la salud</h2> 
+       <ul>
+         <li>Muerte prematura en personas con enfermedades cardíacas o pulmonares </li>
+         <li>Infartos de miocardio no mortales</li>
+         <li>Latidos irregulares</li>
+         <li> Asma agravada</li>
+         <li>Función pulmonar reducida</li>
+         <li>Síntomas respiratorios aumentados, como irritación en las vías respiratorias, tos o dificultad para respirar.</li>
+         <li>La exposición a la contaminación por partículas tiende a afectar en su mayoría a personas con enfermedades cardíacas o pulmonares, niños y adultos mayores.</li>
+       </ul>
+       <h2>Indice Aire y Salud</h2>
+       <div *ngFor="let i of pm25">
+        <div class="Niveles">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="4"> <img src="{{i[3]}}" height="60" width="60" alt=""></ion-col>
+              <ion-col size="8">  
+                <p>Calidad: {{i[0]}} </p>
+              <span>Rango: {{i[2]}}</span>
+                <p>Riesgo: {{i[1]}}</p></ion-col>
+            </ion-row>
+          </ion-grid>
+      </div>
+       </div>
+    </div>
+  <div *ngSwitchCase="P == 'O3'">
+    El ozono en el aire que respiramos puede dañar nuestra salud, mayormente en días calientes y soleados, cuando puede alcanzar niveles dañinos.
+    <h2>Efectos de la salud</h2> 
+     <ul>
+       <li>Hacer más difícil una respiración profunda y vigorosa. </li>
+       <li>Causar falta de aire y dolor cuando se hace una aspiración profunda.</li>
+       <li>Causar tos y dolor o irritación en la garganta.</li>
+       <li>Inflamar y dañar las vías respiratorias</li>
+       <li>Agravar dolencias pulmonares como asma, efisema y bronquitis crónica.</li>
+       <li>Incrementar la frecuencia de los ataques de asma.</li>
+       <li> Hacer los pulmones más susceptibles a infecciones.</li>
+     </ul>
+     <h2>Indice Aire y Salud</h2>
+     <div *ngFor="let i of o3">
+      <div class="Niveles">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="4"> <img src="{{i[3]}}" height="60" width="60" alt=""></ion-col>
+            <ion-col size="8">  
+              <p>Calidad: {{i[0]}} </p>
+            <span>Rango: {{i[2]}}</span>
+              <p>Riesgo: {{i[1]}}</p></ion-col>
+          </ion-row>
+        </ion-grid>
+    </div>
+     </div>
+  </div>
+  <div *ngSwitchCase="P == 'NO2'">
+    El dióxido de nitrógeno NO2 es un compuesto químico gaseoso de color marrón amarillento formado por la combinación de un átomo de nitrógeno y dos de oxígeno.
+    <h2>Efectos de la salud</h2> 
+     <ul>
+       <li>Enfermedades de las vía respiratorias</li>
+       <li>Enfisema pulmonar</li>
+       <li>Irritación ocular y de las mucosas.</li>
+       <li>Asma agravada</li>
+       <li>Bronquitis agudas</li>
+       <li>Síntomas respiratorios aumentados, como irritación en las vías respiratorias, tos o dificultad para respirar.</li>
+       <li>La exposición a la contaminación por partículas tiende a afectar en su mayoría a personas con enfermedades cardíacas o pulmonares, niños y adultos mayores.</li>
+     </ul>
+     Se sabe que las personas con problemas previos de asma o alergias son más susceptibles a  sufrir problemas con exposiciones a menor concentración  
+     de NO2 que personas sanas.
+     <div *ngFor="let i of no2">
+      <div class="Niveles">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="4"> <img src="{{i[3]}}" height="60" width="60" alt=""></ion-col>
+            <ion-col size="8">  
+              <p>Calidad: {{i[0]}} </p>
+            <span>Rango: {{i[2]}}</span>
+              <p>Riesgo: {{i[1]}}</p></ion-col>
+          </ion-row>
+        </ion-grid>
+    </div>
+     </div>
+  </div>
+  <div *ngSwitchCase="P == 'SO2'">
+    El Dióxido de azufre (SO2) es un gas incoloro e irritante contaminante del aire. 
+    <h2>Efectos de la salud</h2> 
+     <ul>
+       <li>irritación e inflamación aguda o crónica en mucosas de la conjuntiva y mucosas respiratorias. </li>
+       <li>Broncoconstricción</li>
+       <li>Agrava enfermedades respiratorias y cardiovasculares</li>
+     </ul>
+     Los grupos de población vulnerables al dióxido de azufre son los niños, los adultos mayores y personas que padecen asma y 
+     enfermedades pulmonares crónicas como bronquitis y enfisema.
+     <div *ngFor="let i of so2">
+      <div class="Niveles">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="4"> <img src="{{i[3]}}" height="60" width="60" alt=""></ion-col>
+            <ion-col size="8">  
+              <p>Calidad: {{i[0]}} </p>
+            <span>Rango: {{i[2]}}</span>
+              <p>Riesgo: {{i[1]}}</p></ion-col>
+          </ion-row>
+        </ion-grid>
+    </div>
+     </div>
+  </div>
+  <div *ngSwitchCase="P == 'CO'">
+    El monóxido de carbono (CO) es un gas incoloro e inodoro, constituyente natural de la atmósfera, formado por un átomo de oxígeno y un átomo de carbono. 
+    En general, cualquier combustible que contenga carbono (gas, petróleo, carbón, madera…) y que sea quemado sin suficiente oxígeno como para formar CO2 es una 
+    fuente potencial de CO.
+    <h2>Efectos de la salud</h2> 
+     <ul>
+       <li>Disminución de la capacidad de transporte de oxígeno de la sangre </li>
+       <li>Detrimento de oxigenación de órganos y tejidos,</li>
+       <li>Disfunciones cardiacas</li>
+       <li>Daños en el sistema nervioso</li>
+       <li>Dolor de cabeza</li>
+       <li>Mareos y fatiga</li>
+       <li>La exposición a la contaminación por partículas tiende a afectar en su mayoría a personas con enfermedades cardíacas o pulmonares, niños y adultos mayores.</li>
+     </ul>
+     <div *ngFor="let i of co">
+      <div class="Niveles">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="4"> <img src="{{i[3]}}" height="60" width="60" alt=""></ion-col>
+            <ion-col size="8">  
+              <p>Calidad: {{i[0]}} </p>
+            <span>Rango: {{i[2]}}</span>
+              <p>Riesgo: {{i[1]}}</p></ion-col>
+          </ion-row>
+        </ion-grid>
+    </div>
+     </div>
+  </div>
+  <div *ngSwitchDefault>
+  </div>
+  </ion-card-content>
+</ion-card>

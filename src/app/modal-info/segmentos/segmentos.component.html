@@ -1,0 +1,23 @@
+  <app-history P="{{segmento}}" city="{{city}}"></app-history>
+
+<ion-segment id="ancla" scrollable [(ngModel)]="segmento" (ionChange)="segmentChanged($event)" value="P.M. 10">
+  <ion-segment-button value="P.M. 10">
+    <ion-label>P.M. 10</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="P.M. 2.5">
+    <ion-label>PM 2.5</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="O3">
+    <ion-label>O3</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="NO2">
+    <ion-label>NO2</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="SO2">
+    <ion-label>SO2</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="CO">
+    <ion-label>CO</ion-label>
+  </ion-segment-button>
+ 
+</ion-segment>

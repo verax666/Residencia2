@@ -1,0 +1,75 @@
+
+
+<ion-content>
+ 
+  <ion-slides pager="true" [options]="slideOpts" (ionSlideReachEnd)="endslide()">
+    <ion-slide>
+      <div class="Titulo">
+      <h1>Bienvenido a Air & Health Safe</h1>
+    </div>
+      <div class="division">
+        <img src="../../assets/imgs/escala indice finalpmg.png" >
+        <p>Descubre los Índices de calidad de Aire de tu localidad.
+          Interfaz Dinamica.</p>
+          <img src="../../assets/imgs/sitio.JPG" alt="">
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="Slide-cont">
+      <h1>Monitoreo de Contaminantes Criterio</h1>
+      <ion-item class="ion-no-border" *ngFor="let item of items" lines="none">
+      <img width="40" height="40" class="img-p25" src={{item.src}} alt=""> 
+      <h4>{{item.name}}</h4>
+    </ion-item>
+    </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="Titulo">
+              <h1>Inicia Agregando tu locacalidad </h1>
+            </div>
+
+      <ion-footer class="ion-no-border hide" id="footer">
+        <ion-grid fixed>
+          <ion-row>
+            <ion-col size="10" offset="1" class="Selects">
+              <ion-item lines="none">
+                <ion-label>Seleccione su País</ion-label>
+                <ion-select  mode="ios" placeholder="País" (ionChange)="obtest(Paisn)" [(ngModel)]="Paisn" cancelText="Cancelar" okText="Aceptar"> 
+                  <ion-select-option  *ngFor="let Paises of Pais" value="{{Paises.Name}}">{{Paises.Name}}</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <ion-item id="Estado" lines="none" class="hide">
+                <ion-label>Seleccione su Estado</ion-label>
+                <ion-select mode="ios" placeholder="Estado" (ionChange)="obtmunicipios(Paisn,Estadon)" [(ngModel)]="Estadon" cancelText="Cancelar" okText="Aceptar"> 
+                 <div  *ngFor="let Estado of Estados">
+                   <div *ngIf="Estado.Enable">
+                    <ion-select-option  class="disponible" value="{{Estado.Entidad}}">
+                     {{Estado.Name}}
+                  </ion-select-option>
+                </div>
+                 </div>
+                </ion-select>
+              </ion-item>
+              <ion-item id="Municipios" lines="none" class="hide ">
+                <ion-label>Municipios Disponibles</ion-label>
+              </ion-item>
+                <ion-list class="hide Disp-Municipios" id="list-m">
+                  <div *ngFor="let M of Municipios">
+                    <ion-item  class="Disp-Municipios" ng *ngIf="M.Enable">
+                    {{M.Name}}
+                    </ion-item>
+                  </div>
+                  </ion-list>
+      <ion-button id="btn-acept" color="acept" class="btn-acept hide" 
+                  expand="full"
+                  shape="round"
+                 routerLink="/sitios"
+      ><ion-label>Continuar</ion-label> </ion-button>
+          </ion-col>
+          </ion-row>
+        </ion-grid>
+    </ion-footer>
+    </ion-slide>
+  </ion-slides>
+ 
+</ion-content>

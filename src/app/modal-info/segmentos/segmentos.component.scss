@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@700&display=swap');
+
+$font: 'Montserrat', 'sans-serif';
+
+    ion-segment-button{
+        --background: #0085FF;
+        --color: white;
+        --background-checked:white ;
+        --color-checked: #69bb7b ;
+       --indicator-color : transparent!important; 
+       border-radius: 10px; 
+       margin: 10px;
+       ion-label{
+           font-family: $font;
+       }
+    }
+   

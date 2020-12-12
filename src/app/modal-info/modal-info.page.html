@@ -1,0 +1,35 @@
+<ion-content>
+  <ion-header class="ion-no-border header">
+    <ion-toolbar>
+      <ion-title slot="start">{{Values.Location}}</ion-title> 
+      <ion-button fill="clear" class="Cerrar-btn" slot="end" (click)="salirsinArgumentos()"><ion-icon name="close-outline" color="acept"></ion-icon></ion-button>
+    </ion-toolbar>
+  </ion-header>
+  <div [ngSwitch]="true">
+    <indice Class-c="Bueno" Calidad-c="Buena" Face-c="green_face"   Temp="{{T}}"
+  Humedad="{{H}}" Viento="{{Viento}}" AQI="{{AQI}}" *ngSwitchCase="AQI <= 50">
+  </indice>
+  <indice Class-c="Aceptable" Calidad-c="Aceptable" Face-c="yellow_face"   Temp="{{T}}"
+  Humedad="{{H}}" AQI="{{AQI}}"
+  Viento="{{Viento}}" *ngSwitchCase="AQI > 50 && AQI <= 100">
+  </indice>
+  <indice Class-c="Mala" Calidad-c="Mala" Face-c="orange_face"    Temp="{{T}}"
+  Humedad="{{H}}" AQI="{{AQI}}"
+  Viento="{{Viento}}" *ngSwitchCase="AQI > 100 && AQI <= 150">
+  </indice>
+  <indice Class-c="Muy-Mala" Calidad-c="Muy Mala" Face-c="red_face"   Temp="{{T}}"
+  Humedad="{{H}}" AQI="{{AQI}}"
+  Viento="{{Viento}}" *ngSwitchCase="AQI > 150 && AQI <= 200">
+  </indice>
+  <indice Class-c="Ex-Mala" Calidad-c="Extremadamente Mala" Face-c="purple_face"    Temp="{{T}}"
+  Humedad="{{H}}" AQI="{{AQI}}"
+  Viento="{{Viento}}" *ngSwitchCase="AQI  > 200">
+  </indice>
+  <indice *ngSwitchDefault Class-c="Bueno" Calidad-c="Buena" Face-c="green_face"   Temp="22"
+  Humedad="32" Viento="32" AQI="{{AQI}}">
+  </indice>
+  </div>
+    <pollutants [Values]="Values" ></pollutants>
+   <app-segmentos city="{{Values.Location}}"></app-segmentos>
+   <app-tips AQI="{{AQI}}"></app-tips>
+</ion-content>

@@ -1,0 +1,15 @@
+<ion-content>
+<ion-header class="ion-no-border header">
+  <ion-toolbar >
+    <ion-title>{{Title}}</ion-title>
+    <ion-button fill="clear" class="Cerrar-btn" slot="end" (click)="salirsinArgumentos()"><ion-icon name="close-outline" color="acept"></ion-icon></ion-button>
+
+  </ion-toolbar>
+</ion-header>
+
+<span [ngSwitch]="true">
+  <app-info-pollutants *ngSwitchCase="Segment == pollutants" P="{{Title}}"></app-info-pollutants>
+  <app-info-indice *ngSwitchCase="Title == 'AQI Indice de calidad del Aire'"></app-info-indice>
+</span>
+
+</ion-content>

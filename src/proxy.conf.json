@@ -1,0 +1,8 @@
+{
+    "/Station/*": {
+        "target": "https://examplet4t.000webhostapp.com/Stations/",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin":true
+    }
+}

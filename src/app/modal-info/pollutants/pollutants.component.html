@@ -1,0 +1,37 @@
+<ion-card>
+  <ion-card-header>
+   
+    <ion-card-title>Contaminantes</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-grid>
+      <ion-row >
+        <ion-col size="4">
+          <a class="info" (click)="abrirModal(pollutants,1)"><ion-icon  name="alert-circle-outline"></ion-icon></a>
+         <indice-p  Color="{{Values.PM10|ipm10}}" Pollutants="P.M. 10" Valor="{{Values.PM10}}"  ></indice-p> 
+        </ion-col>
+        <ion-col size="4">
+          <a class="info" (click)="abrirModal(pollutants,2)"><ion-icon  name="alert-circle-outline"></ion-icon></a>
+          <indice-p Color="{{Values['PM25']|ipm25}}" Pollutants="P.M. 2.5" Valor="{{Values['PM25']}}"></indice-p> 
+         </ion-col>
+         <ion-col size="4">
+          <a class="info" (click)="abrirModal(pollutants,3)"><ion-icon  name="alert-circle-outline"></ion-icon></a>
+          <indice-p Color="{{Values['O3']|io3}}" Pollutants="O3" Valor="{{Values['O3']}}"></indice-p> 
+         </ion-col>
+         <ion-col size="4">
+          <a class="info" (click)="abrirModal(pollutants,4)"><ion-icon  name="alert-circle-outline"></ion-icon></a>
+          <indice-p Color="{{Values.NO2|ino2}}" Pollutants="NO2" Valor="{{Values.NO2}}"></indice-p> 
+         </ion-col>
+         <ion-col size="4">
+          <a class="info" (click)="abrirModal(pollutants,5)"><ion-icon  name="alert-circle-outline"></ion-icon></a>
+          <indice-p Color="{{Values.SO2|iso2}}" Pollutants="SO2" Valor="{{Values.SO2}}"></indice-p> 
+         </ion-col>
+         <ion-col size="4">
+          <a class="info" (click)="abrirModal(pollutants,6)"><ion-icon  name="alert-circle-outline"></ion-icon></a>
+          <indice-p Color="{{Values.CO|ico}}" Pollutants="CO" Valor="{{Values.CO}}"></indice-p> 
+         </ion-col>
+      </ion-row>
+      
+    </ion-grid>
+  </ion-card-content>
+</ion-card>

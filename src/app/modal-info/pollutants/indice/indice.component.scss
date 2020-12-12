@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@700&display=swap');
+
+$font: 'Montserrat', 'sans-serif';
+
+.Green,.Yellow,.Orange,.Red,.Purple{
+    position: relative;
+    padding: 15px 0;
+    padding-bottom: 60px;
+    width: 100%;
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.Green{
+    background-color: rgba(0,255,0,1);
+}
+
+.Yellow{
+    background-color: rgba(255,255,0,1);
+    p,h2{
+        color: black;
+    }
+}
+.Orange{
+    background-color: rgba(255,126,0,1);
+}
+.Red{
+    background-color: rgba(255,0,0,1);
+}
+.Purple{
+    background-color: rgba(143,63,151,1);
+}
+
+.Green::before,.Yellow::before,.Orange::before,.Red::before,.Purple::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height:60%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    bottom: 0%;
+   
+}
+
+.Green::before{
+    background-image: url("../../../../assets/imgs/faces/green_face.png");
+}
+
+.Yellow::before{
+    background-image: url("../../../../assets/imgs/faces/yellow_face.png");
+}
+
+.Orange::before{
+    background-image: url("../../../../assets/imgs/faces/orange_face.png");
+}
+
+.Red::before{
+    background-image: url("../../../../assets/imgs/faces/red_face.png");
+}
+
+.Purple::before{
+    background-image: url("../../../../assets/imgs/faces/purple_face.png");
+}
+
+h2{
+    font-family: $font;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+p{
+    font-family: $font;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media only screen and(max-width:320px){
+
+    h2{
+        font-size: 14px;
+    }
+    p{
+        font-size: 12px;
+      }
+  }
+
+@media only screen and(max-width:280px){
+
+  h2{
+      font-size: 14px;
+  }
+  p{
+      font-size: 12px;
+    }
+}

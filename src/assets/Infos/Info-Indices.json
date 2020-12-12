@@ -1,0 +1,23 @@
+[
+    {"Title":"AQI",
+    "Desc":"Imagínese que el AQI es una regla que va de 0 a 500. Cuanto más alto es el valor del AQI, mayor es el nivel de contaminación atmosférica y mayor la preocupación para la salud. Por ejemplo, un valor del AQI de 50 representa buena calidad atmosférica con escaso potencial para afectar a la salud pública, pero un valor del AQI superior a 300 representa una calidad atmosférica peligrosa.",
+    "GF":"../../../assets/imgs/faces/green_face.png",
+    "GR":"0  a 50 Bueno",
+    "GD":"La calidad del aire se considera satisfactoria y la contaminación atmosférica presenta un riesgo escaso o nulo.",
+    "YF":"../../../assets/imgs/faces/yellow_face.png",
+    "YR":"51 a 100 Aceptable",
+    "YD":"La calidad del aire es aceptable pero para algunos contaminantes podría existir una preocupación moderada para la salud de un grupo muy pequeño de personas excepcionalmente sensibles a la contaminación ambiental.",
+    "OF":"../../../assets/imgs/faces/orange_face.png",
+    "OR":"101 a 150 Mala",
+    "OD":"Los miembros de grupos sensibles pueden padecer efectos en la salud. Probablemente no afectará a las personas en general.",
+    "RF":"../../../assets/imgs/faces/red_face.png",
+    "RR":"151 a 200 Muy Mala",
+    "RD":"Todos pueden comenzar a padecer efectos en la salud y los miembros de grupos sensibles pueden padecer efectos más graves.",
+    "PF":"../../../assets/imgs/faces/purple_face.png",
+    "PR":"201 a 300 Extremadamente Mala",
+    "PD":"Advertencias sanitarias de condiciones de emergencia. Son mayores las probabilidades de que toda la población esté afectada.",
+    "IF":"../../../assets/imgs/faces/purple_face.png",
+    "IR":"301 a 500 Totalmente Mala",
+    "ID":"Alerta sanitaria: todos pueden padecer efectos sanitarios más graves."
+}
+]

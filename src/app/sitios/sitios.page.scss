@@ -1,0 +1,18 @@
+ion-content{
+--background:url("../../assets/imgs/F_Hojas.png");
+}
+#elements{
+    display: inline-block;
+}
+
+#loading{
+position: absolute;
+width: 100%;
+top: 45%;
+ion-spinner{
+    position: relative;
+    left: 45%;
+    --color:#69bb7b;
+}
+
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@700&display=swap');
+
+$font: 'Montserrat', 'sans-serif';
+
+ion-card{
+    --background: rgba(255,255,255,.8) ;
+    border-radius: 15px;
+    text-align: center;
+}
+
+ion-card-subtitle{
+    font-size: 14px;
+    font-weight: 600;
+    color: #69BB7B;
+    font-family: $font;
+}
+
+ion-icon{
+    font-size: 24px;
+    color:gray;
+  
+}
+.center{
+display: flex;
+justify-content: center;
+}
+
+
+
+ .button-details{
+     --background:rgba(255,255,255,.1);
+     color:#69BB7B;
+     font-weight: 800;
+     width: 100%;
+     font-family: $font;
+ }

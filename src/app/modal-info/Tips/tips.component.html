@@ -1,0 +1,61 @@
+<ion-card>
+<ion-card-title>Recomendaciones</ion-card-title>
+<ion-card-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col  [ngSwitch]="true">
+        <h2>Riesgo</h2>
+        <p  *ngSwitchCase="AQI <= 50">Bajo</p>
+        <p *ngSwitchCase="AQI > 50 && AQI <= 100">Moderado</p>
+        <p *ngSwitchCase="AQI > 100 && AQI <= 150">Alto</p>
+        <p *ngSwitchCase="AQI > 150 && AQI <= 200">Muy Alto</p>
+        <p *ngSwitchCase="AQI > 201 && AQI <= 300">Extremadamente Alto</p>
+    </ion-col>
+      <ion-col size="6"><ion-icon name="shield-checkmark-outline"></ion-icon></ion-col>
+ 
+    </ion-row>
+  </ion-grid>
+</ion-card-content>
+</ion-card>
+
+<div class="Recom" [ngSwitch]="true">
+  <div *ngSwitchCase="AQI <= 50">
+    <p >Disfruta las actividades al aire libre.</p>
+  </div>
+  <div *ngSwitchCase="AQI > 50 && AQI <= 100">
+    <h2>Grupos sensibles</h2>
+    <p >Considera reducir las actividades físicas vigorosas al aire libre.</p>
+    <h2>Para toda la población</h2>
+    <p >Disfruta las actividades al aire libre.</p>
+  </div>
+  <div *ngSwitchCase="AQI > 100 && AQI <= 150">
+    <h2>Grupos sensibles</h2>
+    <p >Evita las actividades físicas (tanto moderadas como vigorosas) al aire libre.</p>
+    <h2>Para toda la población</h2>
+    <p >Reduce las actividades físicas vigorosas al aire libre.</p>
+  </div>
+  <div *ngSwitchCase="AQI > 150 && AQI <= 200" >
+    <h2>Grupos sensibles</h2>
+    <ul>
+      <li>No realices actividades al aire libre.</li>
+      <li>Acudir al médico si se presentan síntomas respiratorios o cardiacos</li>
+    </ul>
+    <h2>Para toda la población</h2>
+    <p>Evita las actividades físicas moderadas y vigorosas al aire libre.</p>
+  </div>
+  <div *ngSwitchCase="AQI > 201 && AQI <= 300">
+    <h2>Grupos sensibles</h2>
+    <ul>
+      <li>Permanece en espacios interiores.</li>
+      <li>Acudir al médico si se presentan síntomas respiratorios o cardiacos.</li>
+    </ul>
+   
+  </div>
+  <div *ngSwitchCase="AQI >301 && AQI <= 500">
+    <h2>Grupos sensibles</h2>
+    <ul>
+      <li>Permanece en espacios interiores.</li>
+      <li>Acudir al médico si se presentan síntomas respiratorios o cardiacos.</li>
+    </ul>
+</div>
+</div>

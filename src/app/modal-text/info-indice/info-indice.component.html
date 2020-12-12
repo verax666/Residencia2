@@ -1,0 +1,40 @@
+<ion-card>
+    <ion-card-subtitle>¿Qué son?</ion-card-subtitle>
+    <ion-card-content *ngFor="let i of Info">
+      {{i.Desc}}
+    </ion-card-content>
+  </ion-card>
+  <div *ngFor="let i of Info">
+    
+    <div class="G">
+        <img src="{{i.GF}}" height="60px" width="60px" alt="">
+        <h2>{{i.GR}}</h2>
+        <p>  {{i.GD}}</p>
+    </div>
+    <div class="G">
+      <img src="{{i.YF}}" height="60px" width="60px" alt="">
+      <h2>{{i.YR}}</h2>
+      <p>  {{i.YD}}</p>
+  </div>
+  <div class="G">
+    <img src="{{i.OF}}" height="60px" width="60px" alt="">
+    <h2>{{i.OR}}</h2>
+    <p>  {{i.OD}}</p>
+</div>
+<div class="G">
+  <img src="{{i.RF}}" height="60px" width="60px" alt="">
+  <h2>{{i.RR}}</h2>
+  <p>  {{i.RD}}</p>
+</div>
+<div class="G">
+  <img src="{{i.PF}}" height="60px" width="60px" alt="">
+  <h2>{{i.PR}}</h2>
+  <p>  {{i.GD}}</p>
+</div>
+<div class="G">
+  <img src="{{i.IF}}" height="60px" width="60px" alt="">
+  <h2>{{i.IR}}</h2>
+  <p>  {{i.ID}}</p>
+</div>
+
+  </div>

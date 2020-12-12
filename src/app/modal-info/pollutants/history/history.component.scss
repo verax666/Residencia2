@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@700&display=swap');
+
+$font: 'Montserrat', 'sans-serif';
+h2{
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: #0085FF;
+    width: 90%;
+    left: 5%;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: $font;
+}
+ion-card{
+    ion-card-title{
+        font-family: $font;
+        text-align: center;
+        background-color: #0085FF;
+        color: white;
+      
+    }
+}

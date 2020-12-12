@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@700&display=swap');
+
+$font: 'Montserrat', 'sans-serif';
+ion-content{
+    --background:url("../../assets/imgs/F_Hojas.png");
+    background-attachment: fixed;
+}
+
+.header{
+    top: 10px;
+}
+
+ion-toolbar{
+    --background: rgba(255,255, 255,.3);
+border-radius: 15px;
+width: 90%;
+left: 5%;
+ion-title{
+    color:#69bb7b;
+    font-size: 12px;
+    font-family: $font;
+}
+}
+
+
+@media only screen and(max-width:280px){
+
+    ion-toolbar{
+ 
+    ion-title{
+        font-size: 10px;
+    }
+    }
+}

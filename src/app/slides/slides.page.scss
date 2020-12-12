@@ -1,0 +1,123 @@
+ion-content{
+--background:url("../../assets/imgs/F_Hojas.png");
+background-size: auto;
+
+}
+ion-slide{
+    margin-bottom: 35px;
+    display: block;
+    position: relative;
+    bottom: 0px;
+}
+ion-slides{
+    --bullet-background:rgba(105,187,123,1);
+    --bullet-background-active:black;
+    position: relative;
+    bottom: 0px;
+    height: 100%;
+}
+
+
+
+.Titulo{
+    position: relative;
+    width: 90%;
+    text-align: center;
+    border-radius: 15px;
+    left: 5%;
+}
+h1{
+   position: relative;
+    margin-top: 45px;
+    color: #69BB7B;
+    font-weight: 600;
+    font-size: 22px;
+    top: 15%;
+}
+.division{
+    position: relative;
+    width: 90%;
+    text-align: center;
+    background: rgba(255,255,255,.7);
+    border-radius: 15px;
+    margin: 20px 0;
+    left: 5%;
+        p{
+        position: relative;
+        color: #69BB7B;
+        font-weight: 600;
+        font-size: 18px;
+        margin:0px 15px;
+            }
+    }
+img{
+    
+    margin:20px 0;
+}
+
+.check-item{
+    border-radius: 25px;
+    --background: #69BB7B;
+    font-weight: 600;
+    color: white;
+
+}
+.hide{
+    display: none;
+}
+
+.btn-acept{
+   
+    font-weight: 800;
+}
+
+.Slide-cont{
+    position: relative;
+    background: rgba(255,255,255,.7);
+    width: 90%;
+    left: 5%;
+
+    ion-item{
+        --background: transparent;
+        
+    }
+    
+    .img-p25{
+        position: relative;
+        background: url("../../assets/imgs/cielo.jpg");
+        height: 20px;
+        width: 20px;
+        left: 5px;
+    }
+    h4{
+        position: relative;
+        color: #69BB7B;
+        font-weight: 600;
+        font-size: 12px;
+        left: 7%;
+
+    }
+
+}
+
+.Selects{
+    ion-item{
+        border-radius: 25px;
+        --background: #69BB7B;
+        margin: 10px 0;
+   
+    }
+    ion-label{
+        color: white;
+    }
+    .Disp-Municipios{
+        --background: transparent;
+        color: #69BB7B;
+        font-weight: 600;
+    }
+    ion-list{
+        background: rgba(255, 255, 255,.6);
+    }
+    
+}
+

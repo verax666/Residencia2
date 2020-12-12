@@ -1,0 +1,47 @@
+<div>
+  <ion-grid >
+    <ion-row class="Row-I-{{Class}}">
+      <ion-col size="4" offset="0" >
+        <a class="info" (click)="abrirModal(AQI)"><ion-icon  name="alert-circle-outline"></ion-icon></a>
+        <ion-item class="center item-transp" lines="none">
+       <img src="../../../../assets/imgs/faces/{{Face}}.png"  alt="">
+      </ion-item>
+      </ion-col>
+      <ion-col size="8"   offset="0">
+       <ion-row>
+         <ion-col size="12">
+           <ion-item lines="none">
+        <ion-label >
+           {{AQI}}             
+        </ion-label>
+      </ion-item>
+      </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item lines="none" >
+        <ion-label class="ion-text-wrap">{{Calidad}}</ion-label>
+      </ion-item>
+      </ion-col>
+      </ion-row>
+      </ion-col >
+    </ion-row>
+    <ion-row class="White">
+     <ion-col size="4">
+        <ion-icon  name="sunny"  ></ion-icon>
+        <ion-label >{{Temp}}°</ion-label>
+        <hr width="1"  size="40">
+     </ion-col>
+     <ion-col size="4" >
+        <ion-icon name="water-outline" ></ion-icon>
+        <ion-label >{{Humedad}}%</ion-label>
+        <hr width="1"  size="40">
+     </ion-col>
+     <ion-col size="4" >
+        <ion-icon name="send-outline"  ></ion-icon>
+        <ion-label >{{Viento}} km/h</ion-label>
+        <hr width="1"  size="40">
+     </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

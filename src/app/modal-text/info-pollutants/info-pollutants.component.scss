@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@700&display=swap');
+
+$font: 'Montserrat', 'sans-serif';
+
+ion-card{
+    background: rgba(255,255,255,.1);
+
+    .title{
+        position: relative;
+        margin-left: 25px;
+        color: #69bb7b;
+        font-family: $font;
+        font-size: 16px;
+    }
+    ion-card-content{
+        color: #69bb7b;
+        font-family: $font;
+        margin: 0px 15px;
+        h2{
+            margin:15px 0px
+        }
+        ul{
+            li{
+                margin: 10px 0px;
+            }
+        }
+    }
+}
+
+.Niveles{
+    margin:10px 0px;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 5px;
+    p{
+        position: relative;
+       padding-top: 5px;
+    }
+    h2{
+       
+        display: flex;
+       
+        width: 60px;
+    }
+    img{
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        margin:auto;
+        margin-top: 15px;
+    }
+    
+
+}
